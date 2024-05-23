@@ -70,7 +70,7 @@ export default function Contenu() {
         <div className="flex flex-wrap -mx-4">
           {FData.map((item, index) => (
             <div key={index} className="w-full sm:w-1/2 md:w-1/3 lg:w-1/4 p-4">
-              <div className="bg-white dark:bg-gray-700 border border-gray-200 dark:border-gray-600 rounded-lg  flex flex-col h-full">
+              <div className="bg-white dark:bg-gray-700 border border-gray-200 dark:border-gray-600 rounded-lg :bg-gray-100  flex flex-col h-full">
                 <img
                   src={item.flags.png}
                   alt={`Flag of ${item.name.common}`}

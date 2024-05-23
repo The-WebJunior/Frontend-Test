@@ -19,7 +19,7 @@ function App() {
     <BrowserRouter>
       <div
         className={`h-screen ${
-          darkMode ? "dark bg-gray-900 text-white" : "bg-zinc-100 text-black"
+          darkMode ? "dark bg-gray-800 text-white" : "bg-zinc-100 text-black"
         }`}
       >
         <Navbar darkMode={darkMode} setDarkMode={setDarkMode} />

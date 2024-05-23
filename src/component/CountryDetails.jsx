@@ -19,16 +19,16 @@ export default function CountryDetails() {
   }, [name]);
 
   return (
-    <div className="dark:bg-gray-900 dark:text-white container mx-auto px-4 py-8">
+    <div className="  dark:bg-gray-800/100 h-full w-full dark:text-white  mx-auto px-10 py-8">
       <Link to="/">
         <div className="flex items-center border w-24 bg-white dark:bg-gray-700 dark:border-gray-600 p-2 mb-8 rounded-lg">
           <ArrowLeft className="text-black dark:text-white mr-2" /> Back
         </div>
       </Link>
 
-      <div className="flex flex-col lg:flex-row mx-auto space-y-8 lg:space-y-0 lg:space-x-12">
-        <div className="w-full lg:w-1/2 h-80">
-          <div className="bg-white shadow-lg rounded-lg overflow-hidden h-full">
+      <div className="flex lg:flex-row mx-auto space-y-10 lg:space-y-0 lg:space-x-12">
+        <div className="w-full lg:w-1/3 h-69">
+          <div className="bg-white   overflow-hidden h-full w-full">
             {data && data.flags && data.flags.png ? (
               <img
                 src={data.flags.png}
@@ -42,45 +42,67 @@ export default function CountryDetails() {
             )}
           </div>
         </div>
-        <div className="w-full lg:w-1/2">
-          <div className="flex flex-col space-y-4">
-            <h1 className="font-bold text-2xl text-gray-900 dark:text-gray-200">
-              {name}
-            </h1>
+
+        <div className=" lg:w-1/2 space-x-20 ">
+          <h1 className="font-bold text-2xl text-gray-900 ml-20 py-4 dark:text-gray-200 space-x-9">
+            {name}
+          </h1>
+
+          <div className="flex flex-col ">
             <div className="flex flex-col lg:flex-row lg:space-x-8">
-              <div className="w-full lg:w-1/2 space-y-3">
+              <div className="w-full lg:w-1/2 space-y-3 text-xs">
                 <p>
-                  Nom natif :{" "}
-                  {data?.altSpellings && data.altSpellings.join(", ")}
+                  <strong>Nom natif :</strong>
+                  {data?.altSpellings && data.altSpellings[2]}
                 </p>
-                <p>Population: {data?.population.toLocaleString()}</p>
-                <p>Region: {data?.region}</p>
-                <p>Sub Region: {data?.subregion}</p>
-                <p>Capital: {data?.capital}</p>
+                <p>
+                  {" "}
+                  <strong>Population:</strong>{" "}
+                  {data?.population.toLocaleString()}
+                </p>
+                <p>
+                  <strong>Region:</strong> {data?.region}
+                </p>
+                <p>
+                  {" "}
+                  <strong>Sub Region:</strong>
+                  {data?.subregion}
+                </p>
+                <p>
+                  {" "}
+                  <strong>Capital:</strong>
+                  {data?.capital}
+                </p>
               </div>
-              <div className="w-full lg:w-1/2 space-y-2">
-                <h1>Top Level Domain: {data?.tld}</h1>
+              <div className="w-full lg:w-1/2 space-y-2  me-8 text-xs">
+                <h1>
+                  {" "}
+                  <strong>Top Level Domain:</strong> {data?.tld}
+                </h1>
                 {data && data.currencies && (
                   <p>
-                    Currencies:{" "}
+                    <strong>Currencies:</strong>
                     {Object.values(data.currencies)
                       .map((currency) => currency.name)
                       .join(", ")}
                   </p>
                 )}
                 <p>
-                  Languages:{" "}
+                  <strong>Languages:</strong>
                   {data?.languages && Object.values(data.languages).join(", ")}
                 </p>
               </div>
             </div>
-
-            <div className="flex flex-wrap space-x-2 mt-4">
-              <h1>Border Countries:</h1>
+            <br />
+            <div className="flex  flex-wrap space-x-3 mt-3 text-xs">
+              <h1>
+                {" "}
+                <strong>Border Countries:</strong>
+              </h1>
               {data?.borders?.map((border) => (
                 <button
                   key={border}
-                  className="bg-slate-300 w-24 dark:bg-gray-700 dark:border-gray-600 py-1 text-white rounded mt-2"
+                  className="bg-white w-24  border-collapse dark:bg-gray-700 py-1 text-black rounded mt-2"
                 >
                   {border}
                 </button>
