@@ -1,3 +1,13 @@
 @import "tailwindcss/base";
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
+
+:root {
+  --body_background: white;
+  --body_color: black;
+}
+
+[data-theme="dark"] {
+  --back_background: #282c34;
+  --body_color: white;
+}
