@@ -11,7 +11,7 @@
     "start:server": "json-server --watch data.json --port 3001"
   },
   "dependencies": {
-    "axios": "^1.7.2",
+    "axios": "^1.7.4",
     "lucide": "^0.379.0",
     "lucide-react": "^0.379.0",
     "prop-types": "^15.8.1",
