@@ -1,110 +1,71 @@
 # React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Ce projet utilise React avec Vite pour un démarrage rapide et des fonctionnalités de HMR (Hot Module Replacement).
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+# Frontend Mentor - REST Countries API with Color Theme Switcher
 
-- # Frontend Mentor - REST Countries API with color theme switcher
+![Design preview](./design/desktop-preview.jpg)
 
-![Design preview for the REST Countries API with color theme switcher coding challenge](./design/desktop-preview.jpg)
+## Objectif
 
-## Welcome! 👋 
+Construire une application front-end **responsive** (adaptée aux mobiles) qui :
+- Affiche les pays à partir de l'API [REST Countries](https://restcountries.com).
+- Permet la recherche de pays via un champ de saisie.
+- Filtre les pays par région.
+- Affiche des détails sur un pays en cliquant dessus.
+- Navigue vers les pays frontaliers depuis la page de détail.
+- Offre un mode clair/sombre (optionnel).
 
-Thanks for checking out this front-end coding challenge.
+## Fonctionnalités attendues
 
-[Frontend Mentor](https://www.frontendmentor.io) challenges help you improve your coding skills by building realistic projects.
+1. Afficher tous les pays sur la page d'accueil.
+2. Rechercher un pays.
+3. Filtrer les pays par région.
+4. Voir les détails d’un pays.
+5. Naviguer entre les pays frontaliers.
+6. Activer/désactiver le mode clair/sombre.
+7. **Être responsive sur mobile et desktop.**
 
-**To do this challenge, you need a good understanding of HTML, CSS, and JavaScript.**
+---
 
-## The challenge
+## Suggestions pour démarrer
 
-Your challenge is to integrate with the [REST Countries API](https://restcountries.com) to pull country data and display it like in the designs.
+1. Initialisez votre projet avec un dépôt public sur [GitHub](https://github.com/).
+2. Examinez les designs dans le dossier `/design`.
+3. Construisez l'application étape par étape :
+   - Structurez d'abord le HTML.
+   - Ajoutez les styles de base (polices, couleurs, etc.).
+   - Travaillez section par section.
+4. Déployez votre projet sur une plateforme gratuite comme [GitHub Pages](https://pages.github.com/), [Vercel](https://vercel.com/), ou [Netlify](https://www.netlify.com/).
 
-You can use any JavaScript framework/library on the front-end such as [React](https://reactjs.org) or [Vue](https://vuejs.org). You also have complete control over which packages you use to do things like make HTTP requests or style your project.
+---
 
-Your users should be able to:
+## Images et Aperçus
 
-- See all countries from the API on the homepage
-- Search for a country using an `input` field
-- Filter countries by region
-- Click on a country to see more detailed information on a separate page
-- Click through to the border countries on the detail page
-- Toggle the color scheme between light and dark mode *(optional)*
+### Mode Desktop
+![Aperçu desktop](./design/desktop-preview.jpg)
 
-Want some support on the challenge? [Join our community](https://www.frontendmentor.io/community) and ask questions in the **#help** channel.
+#Light Mode
+![Screenshot 2025-01-21 122109](https://github.com/user-attachments/assets/e31685d3-e317-4c0b-bac5-9478f1faff85)
 
-**⚠️ NOTE ⚠️: Sometimes the REST Countries API can go down. We've added a `data.json` file with all the country data if you prefer to use that instead. However, please be aware that the data in the JSON file might not be up-to-date.**
 
-## Where to find everything
+#Dark Mode
+![Screenshot 2025-01-21 122128](https://github.com/user-attachments/assets/08a6cfd1-1636-447a-8663-04672cabc6a9)
 
-Your task is to build out the project to the designs inside the `/design` folder. 
+### Mode Mobile
+![Aperçu mobile](./design/mobile-preview.jpg)
+x![Screenshot 2025-01-21 122158](https://github.com/user-attachments/assets/3a434a19-a093-40aa-97ab-a46afcf5d776)
 
-In this challenge, you will find mobile and desktop designs in light and dark mode color schemes for both pages.
+---
 
-The designs are in JPG static format. Using JPGs will mean that you'll need to use your best judgment for styles such as `font-size`, `padding` and `margin`. 
+## Ressources
 
-If you would like the design files (we provide Sketch & Figma versions) to inspect the design in more detail, you can [subscribe as a PRO member](https://www.frontendmentor.io/pro).
+- API : [REST Countries](https://restcountries.com)
+- Hébergement : [GitHub Pages](https://pages.github.com/), [Vercel](https://vercel.com/), [Netlify](https://www.netlify.com/)
+- Communauté : [Frontend Mentor Community](https://www.frontendmentor.io/community)
 
-There are no assets for this challenge, as the country flags will be pulled from the [REST Countries API](https://restcountries.com) and you can use an icon font library for the icons.
+---
 
-There is also a `style-guide.md` file containing the information you'll need, such as color palette and fonts.
-
-## Building your project
-
-Feel free to use any workflow that you feel comfortable with. Below is a suggested process, but do not feel like you need to follow these steps:
-
-1. Initialize your project as a public repository on [GitHub](https://github.com/). Creating a repo will make it easier to share your code with the community if you need help. If you're not sure how to do this, [have a read-through of this Try Git resource](https://try.github.io/).
-2. Configure your repository to publish your code to a web address. This will also be useful if you need some help during a challenge as you can share the URL for your project with your repo URL. There are a number of ways to do this, and we provide some recommendations below.
-3. Look through the designs to start planning out how you'll tackle the project. This step is crucial to help you think ahead for CSS classes to create reusable styles.
-4. Before adding any styles, structure your content with HTML. Writing your HTML first can help focus your attention on creating well-structured content.
-5. Write out the base styles for your project, including general content styles, such as `font-family` and `font-size`.
-6. Start adding styles to the top of the page and work down. Only move on to the next section once you're happy you've completed the area you're working on.
-
-## Deploying your project
-
-As mentioned above, there are many ways to host your project for free. Our recommended hosts are:
-
-- [GitHub Pages](https://pages.github.com/)
-- [Vercel](https://vercel.com/)
-- [Netlify](https://www.netlify.com/)
-
-You can host your site using one of these solutions or any of our other trusted providers. [Read more about our recommended and trusted hosts](https://medium.com/frontend-mentor/frontend-mentor-trusted-hosting-providers-bf000dfebe).
-
-## Create a custom `README.md`
-
-We strongly recommend overwriting this `README.md` with a custom one. We've provided a template inside the [`README-template.md`](./README-template.md) file in this starter code.
-
-The template provides a guide for what to add. A custom `README` will help you explain your project and reflect on your learnings. Please feel free to edit our template as much as you like.
-
-Once you've added your information to the template, delete this file and rename the `README-template.md` file to `README.md`. That will make it show up as your repository's README file.
-
-## Submitting your solution
-
-Submit your solution on the platform for the rest of the community to see. Follow our ["Complete guide to submitting solutions"](https://medium.com/frontend-mentor/a-complete-guide-to-submitting-solutions-on-frontend-mentor-ac6384162248) for tips on how to do this.
-
-Remember, if you're looking for feedback on your solution, be sure to ask questions when submitting it. The more specific and detailed you are with your questions, the higher the chance you'll get valuable feedback from the community.
-
-## Sharing your solution
-
-There are multiple places you can share your solution:
-
-1. Share your solution page in the **#finished-projects** channel of the [community](https://www.frontendmentor.io/community). 
-2. Tweet [@frontendmentor](https://twitter.com/frontendmentor) and mention **@frontendmentor**, including the repo and live URLs in the tweet. We'd love to take a look at what you've built and help share it around.
-3. Share your solution on other social channels like LinkedIn.
-4. Blog about your experience building your project. Writing about your workflow, technical choices, and talking through your code is a brilliant way to reinforce what you've learned. Great platforms to write on are [dev.to](https://dev.to/), [Hashnode](https://hashnode.com/), and [CodeNewbie](https://community.codenewbie.org/).
-
-We provide templates to help you share your solution once you've submitted it on the platform. Please do edit them and include specific questions when you're looking for feedback. 
-
-The more specific you are with your questions the more likely it is that another member of the community will give you feedback.
-
-## Got feedback for us?
-
-We love receiving feedback! We're always looking to improve our challenges and our platform. So if you have anything you'd like to mention, please email hi[at]frontendmentor[dot]io.
-
-This challenge is completely free. Please share it with anyone who will find it useful for practice.
-
-**Have fun building!** 🚀
-
+**Amusez-vous bien ! 🚀**
