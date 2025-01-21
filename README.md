@@ -45,7 +45,6 @@ Construire une application front-end **responsive** (adaptée aux mobiles) qui :
 ## Images et Aperçus
 
 ### Mode Desktop
-![Aperçu desktop](./design/desktop-preview.jpg)
 
 #Light Mode
 ![Screenshot 2025-01-21 122109](https://github.com/user-attachments/assets/e31685d3-e317-4c0b-bac5-9478f1faff85)
@@ -55,7 +54,6 @@ Construire une application front-end **responsive** (adaptée aux mobiles) qui :
 ![Screenshot 2025-01-21 122128](https://github.com/user-attachments/assets/08a6cfd1-1636-447a-8663-04672cabc6a9)
 
 ### Mode Mobile
-![Aperçu mobile](./design/mobile-preview.jpg)
 x![Screenshot 2025-01-21 122158](https://github.com/user-attachments/assets/3a434a19-a093-40aa-97ab-a46afcf5d776)
 
 ---
